@@ -7,8 +7,8 @@
     <ProjectGuid>{1B4E7E1F-CCD0-4506-AC22-B314E64CE88C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AmeisenMovement</RootNamespace>
-    <AssemblyName>AmeisenMovement</AssemblyName>
+    <RootNamespace>AmeisenMovementCore</RootNamespace>
+    <AssemblyName>AmeisenMovement.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

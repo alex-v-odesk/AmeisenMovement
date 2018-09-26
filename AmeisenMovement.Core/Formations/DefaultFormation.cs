@@ -11,16 +11,16 @@ namespace AmeisenMovement.Formations
     /// </summary>
     public class DefaultFormation : IFormation
     {
-        private Random rnd = new Random();
         private readonly List<Vector> randomOffsets = new List<Vector>();
+        private Random rnd = new Random();
 
         public Vector4 GetPosition(Vector4 inputPosition, double distance, int memberId, int memberCount)
         {
             Vector4 position = new Vector4(inputPosition);
 
-            if (randomOffsets.Count <= memberId)
+            while (randomOffsets.Count <= memberId)
             {
-                randomOffsets.Add(new Vector(rnd.Next(-40, 40), rnd.Next(-40, 40)));
+                randomOffsets.Add(new Vector(rnd.Next(-4, 4), rnd.Next(-4, 4)));
             }
 
             position.X += Math.Cos(inputPosition.R + GetAngleOffset(memberId, memberCount)) * (distance) + randomOffsets[memberId].X;
